@@ -14,11 +14,12 @@ void Stack::push_head(Data info) {
 }
 
 bool Stack::pop_head() {
-    Node* temp = head;
-    if(head->next = nullptr){
+
+    if(head== nullptr){
         return false;
     }
     else{
+        Node* temp = head;
         head = head->next;
         delete (temp);
         return true;

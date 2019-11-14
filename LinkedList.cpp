@@ -56,8 +56,10 @@ void LinkedList::pop_head() {
     }
 }
 LinkedList::~LinkedList() {
+    //cout<<"destructor called"<<endl;
     // keep popping until empty list
     while (head != nullptr) {
         pop_head();
     }
+
 }

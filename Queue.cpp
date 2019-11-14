@@ -12,8 +12,9 @@ Queue::Queue() {
 
 bool Queue::dequeue_head() {
     if (head != nullptr) {
-        head = head->next;
         Node* temp = head;
+        head = head->next;
+
         delete(temp);
         return true;
     }
